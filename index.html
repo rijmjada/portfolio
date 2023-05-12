@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Diego Ormeño | Developer </title>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!--MyCSS-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
+
+
+
+    <style>
+        .skill-section {
+            color: wheat;
+        }
+
+        .box-left {
+            border-radius: 15px;
+            max-height: 80vh;
+        }
+
+        .box-gif {
+            border-radius: 15px;
+
+            max-height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+        }
+
+        .box-gif img {
+            height: 30vh;
+            width: 30vh;
+            max-height: 50vh;
+            max-width: 50vh;
+            clip-path: circle(40% at 50%);
+        }
+
+        .btn-contact {
+            background: linear-gradient(to bottom, pink, blueviolet, indigo);
+            border: none;
+            border-style: none;
+        }
+
+        .btn-contact a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn-contact:hover {
+            background: linear-gradient(to top, pink, blueviolet, indigo);
+            box-shadow: 2px 2px wheat;
+        }
+
+        .soft-skill-section ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            padding: 15px;
+        }
+
+        .soft-skill-section {
+            display: flex;
+            justify-content: center;
+        }
+
+        .box-projects {}
+
+        /* barras */
+
+
+        .col-title {
+            background: rgba(0, 0, 0, 0.700);
+            min-height: 100%;
+        
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+            letter-spacing: 5px;
+            overflow: hidden;
+            user-select: none;
+            /* elimina seleccion/edición de texto */
+        }
+
+        .left-title {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .right-title {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .left-title h4 {
+            font-weight: 800;
+            font-size: smaller;
+            font-family:'Courier New', Courier, monospace;
+            color: whitesmoke;
+            padding-left: 10px;
+            animation: move-left-title 4s linear infinite;
+        }
+
+
+        .right-title h4 {
+            font-weight: 800;
+            font-size: smaller;
+            font-family:'Courier New', Courier, monospace;
+            color: whitesmoke;
+            padding-right: 10px;
+            animation: move-right-title 4s linear infinite;
+        }
+
+        @keyframes move-left-title {
+            0% {
+                transform: translateY(500%);
+            }
+
+            100% {
+                transform: translateY(-500%);
+            }
+        }
+
+        @keyframes move-right-title {
+            0% {
+                transform: translateY(-500%);
+            }
+
+            100% {
+                transform: translateY(100%);
+            }
+        }
+
+        .row-top {
+            min-height: 2rem;
+            background: rgba(0, 0, 0, 0.400);
+        }
+
+        .row-bottom {
+            min-height: 2rem;
+            background: rgba(0, 0, 0, 0.400);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <a class="icon-navbar" href="#">Icono</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav  ms-auto ">
+                    <li class="nav-item">
+                        <a class="" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="k" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="" href="#">Poyects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+
+        <!-- ======= Presentation Section ======= -->
+        <div class="box-1 d-flex justify-content-center">
+            <div class="row main-content container ">
+
+                <div class="col-md-5 col-sm-12 col-left">
+
+                    <div class="box-texto ">
+                        <h1 class="display-4 fw-bold ms-1"> Hola! 👋 <br> soy Diego</h1>
+                        <h1><span class=" display-3  fw-bold change-text"></span>. </h1>
+                        <p class="mt-5 parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora magni
+                            fuga ad laudantium et.</p>
+                        <div class="mt-4 text-white btn btn-info btn-contact"> <a
+                                href="https://www.linkedin.com/in/diego-orme%C3%B1o/" target="_blank"> Contact Me</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-sm-12 col-right ">
+
+                    <img src="img/dev.gif" alt="">
+
+                    <div class="box-burbujas">
+                        <div class="blob">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" style="stop-color: rgb(254,0,242);"></stop>
+                                        <stop offset="100%" style="stop-color:rgb(251,2,128)"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <path fill="url(#gradient)" transform="translate(100 100)">
+                                    <animate attributeName="d" dur="10000ms" repeatCount="indefinite"
+                                        values="
+                                        M56.8,-67.5C71.3,-55.5,79.2,-35.4,81.2,-15.6C83.2,4.3,79.2,23.9,67.6,34.3C56,44.8,36.6,46.2,18.5,54.3C0.4,62.4,-16.6,77.3,-31.5,76.3C-46.4,75.3,-59.2,58.5,-63.7,41.3C-68.1,24.2,-64.2,6.8,-58.8,-8C-53.4,-22.9,-46.6,-35.1,-36.6,-47.9C-26.5,-60.8,-13.3,-74.1,3.9,-78.8C21.1,-83.5,42.3,-79.5,56.8,-67.5Z;
+                                        M50.9,-65.6C61.9,-51.5,63.9,-31.6,65,-13.3C66.1,5,66.2,21.6,58.6,32.9C50.9,44.1,35.6,49.9,19.5,57.5C3.4,65,-13.5,74.2,-28.6,71.7C-43.7,69.2,-57.1,54.9,-62.2,39.2C-67.3,23.5,-64,6.4,-59.2,-8.5C-54.3,-23.5,-47.7,-36.2,-37.5,-50.5C-27.4,-64.7,-13.7,-80.4,3.1,-84.2C20,-87.9,39.9,-79.7,50.9,-65.6Z;
+                                        M46.3,-52.5C58.5,-45,65.7,-28.9,67.6,-12.8C69.4,3.4,65.9,19.7,58.5,34.8C51,49.8,39.6,63.6,26.2,65.9C12.7,68.2,-2.7,59,-18.6,52.5C-34.4,46.1,-50.8,42.4,-62.8,31.5C-74.9,20.5,-82.6,2.3,-77.5,-11.4C-72.4,-25.2,-54.5,-34.4,-39.4,-41.4C-24.4,-48.4,-12.2,-53.1,2.5,-56.1C17.1,-59,34.2,-60,46.3,-52.5Z;
+                                        M38.7,-45.2C49.2,-37.3,56.2,-24.2,59.1,-10C62,4.1,61,19.3,55.9,36C50.7,52.7,41.6,70.8,27.9,75.2C14.2,79.5,-3.9,70.1,-16.7,59.5C-29.4,48.9,-36.8,37.2,-41.6,25.6C-46.4,14,-48.7,2.5,-51.9,-14.4C-55.1,-31.2,-59.3,-53.4,-50.8,-61.7C-42.3,-70,-21.2,-64.4,-3.5,-60.1C14.1,-55.9,28.2,-53.1,38.7,-45.2Z;
+                                        M44.6,-61.2C52.9,-46.3,51.2,-27.5,54.5,-9.5C57.7,8.4,65.9,25.6,62.2,39.4C58.4,53.1,42.6,63.5,26.7,66.1C10.8,68.7,-5.2,63.6,-20.2,57.3C-35.1,51,-48.9,43.6,-54,32.4C-59,21.1,-55.3,6,-54.1,-11C-52.9,-28.1,-54.1,-47,-45.5,-61.9C-36.9,-76.7,-18.5,-87.4,-0.1,-87.3C18.2,-87.1,36.4,-76.1,44.6,-61.2Z;
+                                        M56.8,-67.5C71.3,-55.5,79.2,-35.4,81.2,-15.6C83.2,4.3,79.2,23.9,67.6,34.3C56,44.8,36.6,46.2,18.5,54.3C0.4,62.4,-16.6,77.3,-31.5,76.3C-46.4,75.3,-59.2,58.5,-63.7,41.3C-68.1,24.2,-64.2,6.8,-58.8,-8C-53.4,-22.9,-46.6,-35.1,-36.6,-47.9C-26.5,-60.8,-13.3,-74.1,3.9,-78.8C21.1,-83.5,42.3,-79.5,56.8,-67.5Z">
+                                    </animate>
+                                </path>
+                            </svg>
+
+                        </div>
+                        <div class="blob">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" style="stop-color: rgb(254,0,242);"></stop>
+                                        <stop offset="100%" style="stop-color:rgb(251,2,128)"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <path fill="url(#gradient)" transform="translate(100 100)">
+                                    <animate attributeName="d" dur="10000ms" repeatCount="indefinite"
+                                        values="
+                                        M56.8,-67.5C71.3,-55.5,79.2,-35.4,81.2,-15.6C83.2,4.3,79.2,23.9,67.6,34.3C56,44.8,36.6,46.2,18.5,54.3C0.4,62.4,-16.6,77.3,-31.5,76.3C-46.4,75.3,-59.2,58.5,-63.7,41.3C-68.1,24.2,-64.2,6.8,-58.8,-8C-53.4,-22.9,-46.6,-35.1,-36.6,-47.9C-26.5,-60.8,-13.3,-74.1,3.9,-78.8C21.1,-83.5,42.3,-79.5,56.8,-67.5Z;
+                                        M50.9,-65.6C61.9,-51.5,63.9,-31.6,65,-13.3C66.1,5,66.2,21.6,58.6,32.9C50.9,44.1,35.6,49.9,19.5,57.5C3.4,65,-13.5,74.2,-28.6,71.7C-43.7,69.2,-57.1,54.9,-62.2,39.2C-67.3,23.5,-64,6.4,-59.2,-8.5C-54.3,-23.5,-47.7,-36.2,-37.5,-50.5C-27.4,-64.7,-13.7,-80.4,3.1,-84.2C20,-87.9,39.9,-79.7,50.9,-65.6Z;
+                                        M46.3,-52.5C58.5,-45,65.7,-28.9,67.6,-12.8C69.4,3.4,65.9,19.7,58.5,34.8C51,49.8,39.6,63.6,26.2,65.9C12.7,68.2,-2.7,59,-18.6,52.5C-34.4,46.1,-50.8,42.4,-62.8,31.5C-74.9,20.5,-82.6,2.3,-77.5,-11.4C-72.4,-25.2,-54.5,-34.4,-39.4,-41.4C-24.4,-48.4,-12.2,-53.1,2.5,-56.1C17.1,-59,34.2,-60,46.3,-52.5Z;
+                                        M38.7,-45.2C49.2,-37.3,56.2,-24.2,59.1,-10C62,4.1,61,19.3,55.9,36C50.7,52.7,41.6,70.8,27.9,75.2C14.2,79.5,-3.9,70.1,-16.7,59.5C-29.4,48.9,-36.8,37.2,-41.6,25.6C-46.4,14,-48.7,2.5,-51.9,-14.4C-55.1,-31.2,-59.3,-53.4,-50.8,-61.7C-42.3,-70,-21.2,-64.4,-3.5,-60.1C14.1,-55.9,28.2,-53.1,38.7,-45.2Z;
+                                        M44.6,-61.2C52.9,-46.3,51.2,-27.5,54.5,-9.5C57.7,8.4,65.9,25.6,62.2,39.4C58.4,53.1,42.6,63.5,26.7,66.1C10.8,68.7,-5.2,63.6,-20.2,57.3C-35.1,51,-48.9,43.6,-54,32.4C-59,21.1,-55.3,6,-54.1,-11C-52.9,-28.1,-54.1,-47,-45.5,-61.9C-36.9,-76.7,-18.5,-87.4,-0.1,-87.3C18.2,-87.1,36.4,-76.1,44.6,-61.2Z;
+                                        M56.8,-67.5C71.3,-55.5,79.2,-35.4,81.2,-15.6C83.2,4.3,79.2,23.9,67.6,34.3C56,44.8,36.6,46.2,18.5,54.3C0.4,62.4,-16.6,77.3,-31.5,76.3C-46.4,75.3,-59.2,58.5,-63.7,41.3C-68.1,24.2,-64.2,6.8,-58.8,-8C-53.4,-22.9,-46.6,-35.1,-36.6,-47.9C-26.5,-60.8,-13.3,-74.1,3.9,-78.8C21.1,-83.5,42.3,-79.5,56.8,-67.5Z">
+                                    </animate>
+                                </path>
+                            </svg>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- End Presentation Section -->
+
+
+        <!-- ======= Projects Section ======= -->
+        <div class="box-projects  bg-dark">
+
+            <div class="row row-top"></div>
+            <div class="row">
+
+                <div class="col-1 col-title left-title">
+                    <h4>PROYECTOS</h4>
+                </div>
+
+                <div class="col-10 ">
+
+                    <div class="row container mx-auto box-pages-cards d-flex justify-content-center text-center mt-5 ">
+
+                        <div class="mypage gym col-md-3  px-5 p-lg-0 p-md-0 col-lg-3 col-sm-12 m-3 ">
+                            <div class="bg-effect">
+                                <a href="https://gym-landing-page-peach.vercel.app/" target="_blank"> <i
+                                        class="bi bi-browser-chrome"> <br> Web</i>
+                                </a>
+                                <a href="https://github.com/rijmjada/gym-landing-page/" target="_blank"> <i
+                                        class="bi bi-file-earmark-code" href=""> <br> Code</i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="mypage quilmes col-md-3  px-5 p-lg-0 p-md-0 col-lg-3 col-sm-12 m-3">
+                            <div class="bg-effect">
+                                <a href="https://quilmes-rijmjada.vercel.app/" target="_blank"> <i
+                                        class="bi bi-browser-chrome">
+                                        <br> Web</i>
+                                </a>
+                                <a href="https://github.com/rijmjada/quilmes/" target="_blank"> <i
+                                        class="bi bi-file-earmark-code" href=""> <br> Code</i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="mypage gym col-md-3  px-5 p-lg-0 p-md-0 col-lg-3 col-sm-12 m-3 ">
+                            <div class="bg-effect">
+                                <a href="https://gym-landing-page-peach.vercel.app/" target="_blank"> <i
+                                        class="bi bi-browser-chrome"> <br> Web</i>
+                                </a>
+                                <a href="https://github.com/rijmjada/gym-landing-page/" target="_blank"> <i
+                                        class="bi bi-file-earmark-code" href=""> <br> Code</i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="mypage quilmes col-md-3  px-5 p-lg-0 p-md-0 col-lg-3 col-sm-12 m-3">
+                            <div class="bg-effect">
+                                <a href="https://quilmes-rijmjada.vercel.app/" target="_blank"> <i
+                                        class="bi bi-browser-chrome">
+                                        <br> Web</i>
+                                </a>
+                                <a href="https://github.com/rijmjada/quilmes/" target="_blank"> <i
+                                        class="bi bi-file-earmark-code" href=""> <br> Code</i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-1 col-title right-title">
+                    <h4>PROYECTOS</h4>
+                </div>
+
+            </div>
+            <div class="row row-bottom"></div>
+        </div>
+        <!-- End Projects Section -->
+
+
+        <!-- ======= Hard Skilss Section ======= -->
+        <div class="skill-section container bg-dark min-vh-100 p-5">
+
+            <div class="row d-flex justify-content-center">
+                <h4 class="display-6  text-center p-2 bg-danger">Hard Skills</h4>
+
+                <div class="col-12 box-gif p-3">
+                    <img src="img/skills.png" alt="">
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-12 p-3 bg-danger">
+                    <h5>Back-End:</h5>
+                    <hr>
+
+                    <ul>
+                        <li>TypeScript</li>
+                        <li>Node Js / Express</li>
+                        <li>Python</li>
+                        <li>C#</li>
+                        <li>PHP</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-12 p-3 bg-primary">
+                    <h5>Front-End:</h5>
+                    <hr>
+
+                    <ul>
+                        <li>HTML-5</li>
+                        <li>CSS3</li>
+                        <li>Bootstrap</li>
+                        <li>Angular</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-12 p-3 bg-success">
+                    <h5>Others:</h5>
+                    <hr>
+
+                    <ul>
+                        <li>Git</li>
+                        <li>SQL</li>
+                        <li>Mongoose</li>
+                        <li>Sequelized</li>
+                        <li>TypeORM</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!-- End Hard Skilss Section -->
+
+
+        <!-- ======= Soft Skilss Section ======= -->
+        <div class="soft-skill-section container bg-light min-vh-100 p-5 mt-5">
+
+            <div class="row d-flex justify-content-center">
+                <h4 class="display-6  text-center p-2 bg-secondary">Soft Skills</h4>
+
+                <div class="col-12 box-gif p-3">
+                    <img src="img/skills-2.png" alt="">
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 text-center p-3 bg-secondary">
+                    <h5>Habilidades Blandas:</h5>
+                    <hr>
+
+                    <ul>
+                        <li>⭐ Iniciativa </li>
+                        <li>⭐ Creatividad </li>
+                        <li>⭐ Comunicación </li>
+                        <li>⭐ Adaptabilidad </li>
+                        <li>⭐ Trabajo en Equipo </li>
+
+                    </ul>
+                </div>
+
+
+
+            </div>
+        </div>
+        <!-- End Soft Skilss Section -->
+
+
+        <!-- ======= Banner Technologies Section ======= -->
+        <div class="row box-skills mt-5">
+            <div class="col title pt-2">
+                <h4 class="text-center title-site-technologies container">
+                    Este sitio fue construido utilizando las siguientes tecnologias: </h4>
+            </div>
+
+            <div class="box-icons-skills d-flex justify-content-center align-items-center pb-4 ">
+                <i class="fa-brands fa-html5" style="color: #ea9738;"></i>
+                <i class="fa-brands fa-css3-alt" style="color: #0860f7;"></i>
+                <i class="fa-brands fa-bootstrap" style="color: #7501e9;"></i>
+                <i class="fa-brands fa-js" style="color: #f6ef13;"></i>
+                <!-- <i class="fa-brands fa-node" style="color: #018e3e;"></i> -->
+            </div>
+
+        </div>
+        <!-- End Banner Technologies Section -->
+
+        <!-- Footer -->
+        <footer class="bg-dark mx-auto p-4">
+
+            <div class="text-center">
+                <small class="text-light fs-5">
+                    &copy;2023 - Diego Ormeño, Full-Stack Developer.
+                </small>
+            </div>
+        </footer>
+
+    </main>
+
+
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/7783976ea5.js" crossorigin="anonymous"></script>
+
+    <!--Iconics-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    <!--Typed JS https://github.com/mattboldt/typed.js/ -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+
+    <!--My Js-->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
+
+
+<!-- <h4 class="display-6  text-center p-2 bg-dark">Mis Proyectos</h4> -->
+
+<!-- <div class="row mx-auto box-pages-cards d-flex justify-content-center text-center mt-5 bg-info">
+
+                <div class="mypage gym col-md-3  px-5 p-lg-0 p-md-0 col-lg-3 col-sm-12 m-3 ">
+                    <div class="bg-effect">
+                        <a href="https://gym-landing-page-peach.vercel.app/" target="_blank"> <i
+                                class="bi bi-browser-chrome"> <br> Web</i>
+                        </a>
+                        <a href="https://github.com/rijmjada/gym-landing-page/" target="_blank"> <i
+                                class="bi bi-file-earmark-code" href=""> <br> Code</i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mypage quilmes col-md-3  px-5 p-lg-0 p-md-0 col-lg-3 col-sm-12 m-3">
+                    <div class="bg-effect">
+                        <a href="https://quilmes-rijmjada.vercel.app/" target="_blank"> <i class="bi bi-browser-chrome">
+                                <br> Web</i>
+                        </a>
+                        <a href="https://github.com/rijmjada/quilmes/" target="_blank"> <i
+                                class="bi bi-file-earmark-code" href=""> <br> Code</i>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div> -->
