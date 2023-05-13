@@ -84,14 +84,14 @@
 
 
         .col-title {
-            background: rgba(0, 0, 0, 0.700);
+            background: rgba(0, 0, 0, 0.400);
             min-height: 100%;
-        
+
             writing-mode: vertical-lr;
             text-orientation: upright;
             letter-spacing: 5px;
-            overflow: hidden;
             user-select: none;
+            overflow: hidden;
             /* elimina seleccion/edición de texto */
         }
 
@@ -110,7 +110,7 @@
         .left-title h4 {
             font-weight: 800;
             font-size: smaller;
-            font-family:'Courier New', Courier, monospace;
+            font-family: 'Courier New', Courier, monospace;
             color: whitesmoke;
             padding-left: 10px;
             animation: move-left-title 6s linear infinite;
@@ -120,7 +120,7 @@
         .right-title h4 {
             font-weight: 800;
             font-size: smaller;
-            font-family:'Courier New', Courier, monospace;
+            font-family: 'Courier New', Courier, monospace;
             color: whitesmoke;
             padding-right: 10px;
             animation: move-right-title 6s linear infinite;
@@ -147,13 +147,45 @@
         }
 
         .row-top {
+            letter-spacing: 5px;
+            user-select: none;
             min-height: 2rem;
             background: rgba(0, 0, 0, 0.400);
         }
 
+        .row-top small {
+            animation: move-top-title 6s linear infinite;
+        }
         .row-bottom {
+            letter-spacing: 5px;
+            user-select: none;
             min-height: 2rem;
             background: rgba(0, 0, 0, 0.400);
+            animation: move-top-bottom-title 6s linear infinite;
+        }
+
+        .row-bottom small {
+            animation: move-bottom-title 6s linear infinite;
+        }
+
+        @keyframes move-top-title {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        @keyframes move-bottom-title {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
         }
     </style>
 
@@ -271,7 +303,8 @@
         <!-- ======= Projects Section ======= -->
         <div class="box-projects  bg-dark">
 
-            <div class="row row-top"></div>
+            <div class="row row-top"> <small class="d-flex justify-content-center align-items-center">Proyectos</small>
+            </div>
             <div class="row">
 
                 <div class="col-1 col-title left-title">
@@ -337,7 +370,8 @@
                 </div>
 
             </div>
-            <div class="row row-bottom"></div>
+            <div class="row row-bottom"> <small
+                    class="d-flex justify-content-center align-items-center">Proyectos</small></div>
         </div>
         <!-- End Projects Section -->
 
