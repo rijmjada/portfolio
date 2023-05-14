@@ -1,5 +1,5 @@
 let typingText = new Typed(".change-text", {
-    strings: ["Estudiante", "Coder" ,"Progammer", "Full-Stack", "Developer"],
+    strings: ["Estudiante", "Developer", "Full-Stack", "Coder", "Progammer",],
     loop: true,
     typeSpeed: 85,
     backSpeed: 45,
