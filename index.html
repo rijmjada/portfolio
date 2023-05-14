@@ -111,7 +111,6 @@
             font-weight: 800;
             font-size: smaller;
             font-family: 'Courier New', Courier, monospace;
-            color: whitesmoke;
             padding-left: 10px;
             animation: move-left-title 6s linear infinite;
         }
@@ -121,7 +120,6 @@
             font-weight: 800;
             font-size: smaller;
             font-family: 'Courier New', Courier, monospace;
-            color: whitesmoke;
             padding-right: 10px;
             animation: move-right-title 6s linear infinite;
         }
@@ -153,9 +151,7 @@
             background: rgba(0, 0, 0, 0.400);
         }
 
-        .row-top small {
-            animation: move-top-title 6s linear infinite;
-        }
+        
         .row-bottom {
             letter-spacing: 5px;
             user-select: none;
@@ -164,30 +160,7 @@
             animation: move-top-bottom-title 6s linear infinite;
         }
 
-        .row-bottom small {
-            animation: move-bottom-title 6s linear infinite;
-        }
-
-        @keyframes move-top-title {
-            0% {
-                transform: translateX(-100%);
-            }
-
-            100% {
-                transform: translateX(100%);
-            }
-        }
-
-        @keyframes move-bottom-title {
-            0% {
-                transform: translateX(100%);
-            }
-
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-
+      
         .col-right   {
            filter: drop-shadow(0 0 5rem  blueviolet);
         }
