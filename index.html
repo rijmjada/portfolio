@@ -33,20 +33,18 @@
         }
 
         .box-gif {
-            border-radius: 15px;
-
-            max-height: 80vh;
+            height: fit-content;
             display: flex;
             justify-content: center;
             align-items: start;
         }
 
         .box-gif img {
-            height: 30vh;
-            width: 30vh;
-            max-height: 50vh;
-            max-width: 50vh;
+            padding: 15px;
+            width: auto;
+            max-width: 38vb;
             clip-path: circle(40% at 50%);
+            margin: 25px;
         }
 
         .btn-contact {
@@ -78,7 +76,9 @@
             justify-content: center;
         }
 
-        .box-projects {}
+        .box-projects {
+            background-color: rgba(71, 37, 103, 0.522);
+        }
 
         /* barras */
 
@@ -165,6 +165,20 @@
             filter: drop-shadow(0 0 2rem blueviolet);
         }
 
+        .box-icon-skills{
+            min-height: 45vh;
+        }
+
+        .skill-section {
+            background-color: whitesmoke;
+
+        }
+
+        .icons-skill {
+            padding: 8px;
+            max-width: 12vb;
+            width: auto;
+        }
       
     </style>
 
@@ -172,35 +186,11 @@
 
 <body>
 
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-md">
-        <div class="container-fluid">
-            <a class="icon-navbar" href="#">Icono</a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-
-                <ul class="navbar-nav  ms-auto ">
-                    <li class="nav-item">
-                        <a class="" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="k" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="" href="#">Poyects</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
 
     <main>
+
+
 
         <!-- ======= Presentation Section ======= -->
         <div class="box-1 d-flex justify-content-center">
@@ -259,92 +249,111 @@
 
 
         <!-- ======= Projects Section ======= -->
-        <div class="box-projects  bg-dark">
+        <div class="box-projects">
 
-            <div class="row row-top"> <small class="d-flex justify-content-center align-items-center">Proyectos</small>
-            </div>
-            <div class="row">
+            <h2 class=" display-3 text-center mt-5"
+                style="font-weight: 800; color: wheat; background-color: rgba(0, 0, 0, 0.702);width: 100%;">PROJECTS
+            </h2>
+            <div class="row container mx-auto box-pages-cards d-flex justify-content-center text-center mt-5  ">
 
-                <div class="col-1 col-title left-title">
-                    <h4>PROYECTOS</h4>
-                </div>
-
-                <div class="col-10 ">
-
-                    <div class="row container mx-auto box-pages-cards d-flex justify-content-center text-center mt-5 ">
-
-                        <div class="mypage gym col-md-3  px-5 p-lg-0 p-md-0 col-lg-3 col-sm-12 m-3 ">
-                            <div class="bg-effect">
-                                <a href="https://gym-landing-page-peach.vercel.app/" target="_blank"> <i
-                                        class="bi bi-browser-chrome"> <br> Web</i>
-                                </a>
-                                <a href="https://github.com/rijmjada/gym-landing-page/" target="_blank"> <i
-                                        class="bi bi-file-earmark-code" href=""> <br> Code</i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="mypage quilmes col-md-3  px-5 p-lg-0 p-md-0 col-lg-3 col-sm-12 m-3">
-                            <div class="bg-effect">
-                                <a href="https://quilmes-rijmjada.vercel.app/" target="_blank"> <i
-                                        class="bi bi-browser-chrome">
-                                        <br> Web</i>
-                                </a>
-                                <a href="https://github.com/rijmjada/quilmes/" target="_blank"> <i
-                                        class="bi bi-file-earmark-code" href=""> <br> Code</i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="mypage gym col-md-3  px-5 p-lg-0 p-md-0 col-lg-3 col-sm-12 m-3 ">
-                            <div class="bg-effect">
-                                <a href="https://gym-landing-page-peach.vercel.app/" target="_blank"> <i
-                                        class="bi bi-browser-chrome"> <br> Web</i>
-                                </a>
-                                <a href="https://github.com/rijmjada/gym-landing-page/" target="_blank"> <i
-                                        class="bi bi-file-earmark-code" href=""> <br> Code</i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="mypage quilmes col-md-3  px-5 p-lg-0 p-md-0 col-lg-3 col-sm-12 m-3">
-                            <div class="bg-effect">
-                                <a href="https://quilmes-rijmjada.vercel.app/" target="_blank"> <i
-                                        class="bi bi-browser-chrome">
-                                        <br> Web</i>
-                                </a>
-                                <a href="https://github.com/rijmjada/quilmes/" target="_blank"> <i
-                                        class="bi bi-file-earmark-code" href=""> <br> Code</i>
-                                </a>
-                            </div>
-                        </div>
-
+                <div class="mypage gym col-md-3  px-5 p-lg-0 p-md-0 col-lg-3 col-sm-12 m-3 ">
+                    <div class="bg-effect">
+                        <a href="https://gym-landing-page-peach.vercel.app/" target="_blank"> <i
+                                class="bi bi-browser-chrome"> <br> Web</i>
+                        </a>
+                        <a href="https://github.com/rijmjada/gym-landing-page/" target="_blank"> <i
+                                class="bi bi-file-earmark-code" href=""> <br> Code</i>
+                        </a>
                     </div>
-
                 </div>
 
-                <div class="col-1 col-title right-title">
-                    <h4>PROYECTOS</h4>
+                <div class="mypage quilmes col-md-3  px-5 p-lg-0 p-md-0 col-lg-3 col-sm-12 m-3">
+                    <div class="bg-effect">
+                        <a href="https://quilmes-rijmjada.vercel.app/" target="_blank"> <i class="bi bi-browser-chrome">
+                                <br> Web</i>
+                        </a>
+                        <a href="https://github.com/rijmjada/quilmes/" target="_blank"> <i
+                                class="bi bi-file-earmark-code" href=""> <br> Code</i>
+                        </a>
+                    </div>
                 </div>
+
+                <div class="mypage gif-app col-md-3  px-5 p-lg-0 p-md-0 col-lg-3 col-sm-12 m-3 ">
+                    <div class="bg-effect">
+                        <a href="https://app-gifs-angular-dao.netlify.app/" target="_blank"> <i
+                                class="bi bi-browser-chrome"> <br> Web</i>
+                        </a>
+                        <a href="https://github.com/rijmjada/gym-landing-page/" target="_blank"> <i
+                                class="bi bi-file-earmark-code" href=""> <br> Code</i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mypage chrome-extension-app col-md-3  px-5 p-lg-0 p-md-0 col-lg-3 col-sm-12 m-3">
+                    <div class="bg-effect">
+                        <a href="https://chrome.google.com/webstore/detail/highlighter-pdf/fefpgdllnapgapghnmhofohgldmfabia?"
+                            target="_blank"> <i class="bi bi-browser-chrome">
+                                <br> Web</i>
+                        </a>
+                        <a href="https://github.com/rijmjada/" target="_blank"> <i class="bi bi-file-earmark-code"
+                                href=""> <br> Code</i>
+                        </a>
+                    </div>
+                </div>
+
 
             </div>
-            <div class="row row-bottom"> <small
-                    class="d-flex justify-content-center align-items-center">Proyectos</small></div>
+
         </div>
         <!-- End Projects Section -->
 
 
         <!-- ======= Hard Skilss Section ======= -->
-        <div class="skill-section container bg-dark min-vh-100 p-5">
+        <div class="skill-section min-vh-100">
+            <h2 class=" display-3 text-center "
+                style="font-weight: 800; color: wheat; background-color: rgba(0, 0, 0, 0.702); width: 100% !important; padding: 0 !important;">
+                SKILLS</h2>
 
-            <div class="row d-flex justify-content-center">
-                <h4 class="display-6  text-center p-2 bg-danger">Hard Skills</h4>
+            <div class="container-fluid ">
 
-                <div class="col-12 box-gif p-3">
+                <div class="box-gif">
+                    <img src="img/skills.png" alt="">
+
+                </div>
+
+
+                <div class="box-icon-skills container-fluid d-flex justify-content-center align-items-start p-4 gap-5  flex-wrap">
+                    <img src="./svg/LogosJavascript.svg" alt="" class="img-fluid icons-skill">
+                    <img src="./svg/ts.svg" alt="" class="img-fluid icons-skill">
+                    <img src="./svg/CibPhp.svg" alt="" class="img-fluid icons-skill">
+                    <img src="./svg/DeviconCss3Wordmark.svg" alt="" class="img-fluid icons-skill">
+                    <img src="./svg/DeviconHtml5Wordmark.svg" alt="" class="img-fluid icons-skill">
+                    <img src="./svg/LogosBootstrap.svg" alt="" class="img-fluid icons-skill">
+                    <img src="./svg/DeviconAzuresqldatabase.svg" alt="" class="img-fluid icons-skill">
+                    <img src="./svg/DeviconMongooseWordmark.svg" alt="" class="img-fluid icons-skill">
+                    <img src="./svg/DeviconPythonWordmark.svg" alt="" class="img-fluid icons-skill">
+                    <img src="./svg/LogosNestjs.svg" alt="" class="img-fluid icons-skill">
+                    <img src="./svg/LogosPostgresql.svg" alt="" class="img-fluid icons-skill">
+                    <img src="./svg/LogosNodejs.svg" alt="" class="img-fluid icons-skill">
+                    <img src="./svg/LogosNpm.svg" alt="" class="img-fluid icons-skill">
+                    <img src="./svg/LogosMongodb.svg" alt="" class="img-fluid icons-skill">
+                    <img src="./svg/LogosAngular.svg" alt="" class="img-fluid icons-skill">
+
+
+                </div>
+
+
+
+            </div>
+
+
+            <!-- <div class="row d-flex justify-content-center p-4 min-vh-100">
+
+                <div class="col-12 box-gif  bg-info">
                     <img src="img/skills.png" alt="">
                 </div>
 
-                <div class="col-lg-3 col-md-4 col-sm-12 p-3 bg-danger">
+                <div class="col-lg-3 col-md-4 col-sm-12 p-3 bg-danger b">
                     <h5>Back-End:</h5>
                     <hr>
 
@@ -382,13 +391,13 @@
                     </ul>
                 </div>
 
-            </div>
+            </div> -->
         </div>
         <!-- End Hard Skilss Section -->
 
 
         <!-- ======= Soft Skilss Section ======= -->
-        <div class="soft-skill-section container bg-light min-vh-100 p-5 mt-5">
+        <!-- <div class="soft-skill-section container bg-light min-vh-100 p-5 mt-5">
 
             <div class="row d-flex justify-content-center">
                 <h4 class="display-6  text-center p-2 bg-secondary">Soft Skills</h4>
@@ -414,7 +423,7 @@
 
 
             </div>
-        </div>
+        </div> -->
         <!-- End Soft Skilss Section -->
 
 
@@ -472,33 +481,3 @@
 </body>
 
 </html>
-
-
-<!-- <h4 class="display-6  text-center p-2 bg-dark">Mis Proyectos</h4> -->
-
-<!-- <div class="row mx-auto box-pages-cards d-flex justify-content-center text-center mt-5 bg-info">
-
-                <div class="mypage gym col-md-3  px-5 p-lg-0 p-md-0 col-lg-3 col-sm-12 m-3 ">
-                    <div class="bg-effect">
-                        <a href="https://gym-landing-page-peach.vercel.app/" target="_blank"> <i
-                                class="bi bi-browser-chrome"> <br> Web</i>
-                        </a>
-                        <a href="https://github.com/rijmjada/gym-landing-page/" target="_blank"> <i
-                                class="bi bi-file-earmark-code" href=""> <br> Code</i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="mypage quilmes col-md-3  px-5 p-lg-0 p-md-0 col-lg-3 col-sm-12 m-3">
-                    <div class="bg-effect">
-                        <a href="https://quilmes-rijmjada.vercel.app/" target="_blank"> <i class="bi bi-browser-chrome">
-                                <br> Web</i>
-                        </a>
-                        <a href="https://github.com/rijmjada/quilmes/" target="_blank"> <i
-                                class="bi bi-file-earmark-code" href=""> <br> Code</i>
-                        </a>
-                    </div>
-                </div>
-
-
-            </div> -->
