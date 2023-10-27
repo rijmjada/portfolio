@@ -247,7 +247,7 @@ main .box-1 {
     }
 
     .col-right img {
-        height: 15rem;
+        height: auto;
     }
 
     .box-burbujas {
