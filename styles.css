@@ -22,32 +22,31 @@ body {
 /******************** Navbar ********************/
 /**************************************************/
 
-.navbar {
-    background-color: transparent;
+.navbar{
+    height: 4rem;
+    position: fixed;
+    min-width: 100%;
+    z-index: 9999;
+    background: #49018c6d;
+    backdrop-filter: blur(15px);
 }
 
-.navbar .container-fluid {
-    padding: 0 2.5em;
+.navbar-nav{
+    min-width: 100%;
 }
 
-.navbar-nav li a,
-.icon-navbar {
-    color: whitesmoke;
-    text-decoration: none;
+.nav-link,
+.navbar-brand {
+    color: rgba(255, 255, 255, 0.508) !important;
+    font-size: large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.navbar-nav li a:hover,
-.icon-navbar:hover {
-    color: #b353a6;
+#icon-navbar {
+    max-width: 50px;
+    opacity: 70%;
 }
 
-.icon-navbar {
-    font-size: x-large;
-}
-
-.nav-item {
-    margin: 1em;
-}
 
 
 /******************** Main ********************/
@@ -269,11 +268,39 @@ main .box-1 {
     .box-texto .parrafo {
         font-size: small;
     }
+}
 
+
+@media (max-width: 990px) {
+    .navbar-nav {
+        padding: 25px;
+        margin-top: 15px;
+        background-color: rgba(0, 0, 0, 0.913);
+        border-radius: 8px;
+       
+    }
+
+    .navbar-nav li {
+        border: .5px solid rgba(255, 255, 255, 0.369);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        margin: 5px;
+    }
+    .navbar-nav li:hover {
+        cursor: pointer;
+    }
+
+    .nav-link {
+        color: rgba(245, 245, 245, 0.813) !important;
+    }
 }
 
 .skill-section {
     color: wheat;
+    background-color: whitesmoke;
 }
 
 .box-left {
@@ -418,10 +445,6 @@ main .box-1 {
     min-height: 45vh;
 }
 
-.skill-section {
-    background-color: whitesmoke;
-
-}
 
 .icons-skill {
     padding: 8px;

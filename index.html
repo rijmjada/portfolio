@@ -25,8 +25,40 @@
 
 <body>
     <main>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                
+
+                <img src="svg/coding.svg" alt="" id="icon-navbar">
+
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-around">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#Project-Section">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#Skill-Section">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#AboutMe-Section">About Me</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+
+
         <!-- ======= Presentation Section ======= -->
-        <div class="box-1 d-flex justify-content-center ">
+        <div class="box-1 d-flex justify-content-center">
             <div class="row main-content container ">
 
                 <div class="col-xl-6 col-12 col-left">
@@ -34,7 +66,8 @@
                     <div class="box-texto ">
                         <h1 class="display-4 fw-bold ms-1"> ¡Hola! 👋<br> soy Diego</h1>
                         <h1><span class=" display-3  fw-bold change-text"></span>. </h1>
-                        <p class="mt-5 parrafo">Soy un desarrollador web con experiencia en la creación de sitios y aplicaciones atractivas y funcionales.</p>
+                        <p class="mt-5 parrafo">Soy un desarrollador web con experiencia en la creación de sitios y
+                            aplicaciones atractivas y funcionales.</p>
                         <div class="mt-4 text-white btn btn-info btn-contact"> <a
                                 href="https://www.linkedin.com/in/diego-orme%C3%B1o/" target="_blank"> ¡Contactame! </a>
                         </div>
@@ -78,7 +111,7 @@
 
 
         <!-- ======= Projects Section ======= -->
-        <div class="box-projects">
+        <div class="box-projects" id="Project-Section">
 
             <h2 class=" display-3 text-center p-3"
                 style="font-weight: 800; color: wheat; background-color: black;width: 100%;">PROJECTS
@@ -98,8 +131,7 @@
 
                 <div class="mypage chrome-extension-app col-md-3  px-5 p-lg-0 p-md-0 col-lg-3 col-sm-12 m-3">
                     <div class="bg-effect">
-                        <a href="https://highlighter-pdf.vercel.app/"
-                            target="_blank"> <i class="bi bi-browser-chrome">
+                        <a href="https://highlighter-pdf.vercel.app/" target="_blank"> <i class="bi bi-browser-chrome">
                                 <br> Web</i>
                         </a>
                         <a href="https://github.com/rijmjada/" target="_blank"> <i class="bi bi-file-earmark-code"
@@ -137,12 +169,12 @@
 
 
         <!-- ======= Hard Skilss Section ======= -->
-        <div class="skill-section min-vh-100 ">
+        <div class="skill-section min-vh-100" id="Skill-Section">
             <h2 class=" display-3 text-center p-3"
                 style="font-weight: 800; color: wheat; background-color: black ;width: 100%;">SKILLS
             </h2>
 
-            <div class="container-fluid ">
+            <div class="container-fluid">
 
                 <div class="box-gif">
                     <img src="img/skills.png" alt="">
@@ -178,65 +210,14 @@
                     <img src="./svg/angular.svg" alt="" class="img-fluid icons-skill">
                     <img src="./svg/LogosSequelize.svg" alt="" class="img-fluid icons-skill">
 
-
-
                 </div>
-
-
 
             </div>
-
-
-            <!-- <div class="row d-flex justify-content-center p-4 min-vh-100">
-
-                <div class="col-12 box-gif  bg-info">
-                    <img src="img/skills.png" alt="">
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-12 p-3 bg-danger b">
-                    <h5>Back-End:</h5>
-                    <hr>
-
-                    <ul>
-                        <li>TypeScript</li>
-                        <li>Node Js / Express</li>
-                        <li>Python</li>
-                        <li>C#</li>
-                        <li>PHP</li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-12 p-3 bg-primary">
-                    <h5>Front-End:</h5>
-                    <hr>
-
-                    <ul>
-                        <li>HTML-5</li>
-                        <li>CSS3</li>
-                        <li>Bootstrap</li>
-                        <li>Angular</li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-12 p-3 bg-success">
-                    <h5>Others:</h5>
-                    <hr>
-
-                    <ul>
-                        <li>Git</li>
-                        <li>SQL</li>
-                        <li>Mongoose</li>
-                        <li>Sequelized</li>
-                        <li>TypeORM</li>
-                    </ul>
-                </div>
-
-            </div> -->
         </div>
         <!-- End Hard Skilss Section -->
 
         <!-- ======= AboutMe Section ======= -->
-        <div class="about-me min-vh-100">
+        <div class="about-me min-vh-100" id="AboutMe-Section">
             <div class="container-fluid section-title">
                 <h2 class="display-6">Sobre mi:</h2>
             </div>
@@ -289,7 +270,6 @@
 
         </div>
         <!-- End AboutMe Section -->
-
 
 
         <!-- ======= Banner Technologies Section ======= -->
