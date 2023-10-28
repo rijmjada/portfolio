@@ -22,7 +22,7 @@ body {
 /******************** Navbar ********************/
 /**************************************************/
 
-.navbar{
+.navbar {
     height: 4rem;
     position: fixed;
     min-width: 100%;
@@ -31,7 +31,7 @@ body {
     backdrop-filter: blur(15px);
 }
 
-.navbar-nav{
+.navbar-nav {
     min-width: 100%;
 }
 
@@ -39,7 +39,7 @@ body {
 .navbar-brand {
     color: rgba(255, 255, 255, 0.508) !important;
     font-size: large;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #icon-navbar {
@@ -78,7 +78,7 @@ main .box-1 {
 
 
 .box-texto .parrafo {
-    font-size:medium ;
+    font-size: medium;
     letter-spacing: 1px;
 }
 
@@ -189,6 +189,7 @@ main .box-1 {
     background-size: cover;
     opacity: .9;
 }
+
 .bg-effect {
     background-color: rgba(0, 0, 0, 0.600);
     position: absolute;
@@ -260,7 +261,7 @@ main .box-1 {
         position: absolute;
         width: 25rem;
         left: -20%;
-        top:15%;
+        top: 15%;
     }
 }
 
@@ -277,7 +278,7 @@ main .box-1 {
         margin-top: 15px;
         background-color: rgba(0, 0, 0, 0.913);
         border-radius: 8px;
-       
+
     }
 
     .navbar-nav li {
@@ -289,6 +290,7 @@ main .box-1 {
         border-radius: 15px;
         margin: 5px;
     }
+
     .navbar-nav li:hover {
         cursor: pointer;
     }
@@ -479,4 +481,21 @@ main .box-1 {
     border-radius: 10%;
     margin: 50px;
     opacity: 70%;
+}
+
+
+.bi-arrow-up-circle-fill {
+    display: none;
+    background-color: transparent;
+    border: 0;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 40px;
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.bi-arrow-up-circle-fill:hover {
+    color: rgb(202, 155, 246);
 }
