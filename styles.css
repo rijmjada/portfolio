@@ -45,7 +45,7 @@ body {
     opacity: 70%;
 }
 
-.change-text{
+.change-text {
     color: #b353a6;
 }
 
@@ -53,13 +53,20 @@ body {
 /**************************************************/
 
 .box-1 {
-    height: 100vh;
+    min-height: 100vh;
+}
+
+.main-content {
+    padding: 15px;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
 }
 
 .box-texto .parrafo {
     font-size: medium;
     letter-spacing: 1px;
 }
+
 
 .col-right img {
     z-index: 20;
@@ -197,19 +204,6 @@ body {
         height: auto;
     }
 
-    .box-burbujas {
-        top: -15%;
-        left: 15%;
-        height: 25rem;
-        width: 25rem;
-    }
-
-    .blob {
-        position: absolute;
-        width: 25rem;
-        left: -20%;
-        top: 15%;
-    }
 }
 
 @media (max-width: 1200px) {
@@ -244,6 +238,11 @@ body {
 
     .nav-link {
         color: rgba(245, 245, 245, 0.813) !important;
+    }
+
+    .col-right img {
+        z-index: 20;
+        max-height: 25vh;
     }
 }
 
