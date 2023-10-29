@@ -200,9 +200,6 @@ body {
         margin-top: 25rem;
     }
 
-    .col-right img {
-        height: auto;
-    }
 
 }
 
@@ -243,6 +240,16 @@ body {
     .col-right img {
         z-index: 20;
         max-height: 25vh;
+    }
+
+    .box-texto h1,
+    span {
+        font-size: xx-large !important;
+    }
+
+    .box-texto p,
+    .btn-contact {
+        font-size: small !important;
     }
 }
 
