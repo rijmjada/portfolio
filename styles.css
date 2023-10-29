@@ -1,7 +1,6 @@
 * {
     font-family: monospace, sans-serif;
     color: wheat;
-
 }
 
 html {
@@ -14,7 +13,6 @@ html {
 
 body {
     background: #250821;
-    color: whitesmoke;
     overflow-x: hidden;
 }
 
@@ -47,76 +45,25 @@ body {
     opacity: 70%;
 }
 
-
+.change-text{
+    color: #b353a6;
+}
 
 /******************** Main ********************/
 /**************************************************/
 
-main .box-1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.box-1 {
     height: 100vh;
-    margin-bottom: 28vh;
 }
-
-.main-content {
-    height: 80%;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.col-left {
-    height: 60vh;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    align-items: center
-}
-
 
 .box-texto .parrafo {
     font-size: medium;
     letter-spacing: 1px;
 }
 
-
-.col-right {
-    height: 60vh;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
 .col-right img {
     z-index: 20;
-    max-height: 25rem;
-}
-
-.box-burbujas {
-    position: absolute;
-    height: 35rem;
-    width: 35rem;
-
-}
-
-.blob {
-    position: absolute;
-    width: 35rem;
-    top: 5%;
-    right: 5%;
-}
-
-.blob:nth-child(2) {
-    filter: blur(8em);
-}
-
-.change-text {
-    color: #b353a6;
+    max-height: 35vh;
 }
 
 
