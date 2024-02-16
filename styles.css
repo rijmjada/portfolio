@@ -470,6 +470,7 @@ body {
     transform: rotate(-0.7deg);
     transform-origin: top left;
     font-size: 122px !important;
+    box-shadow: 0 0 100px 0 #3498db;
 
 }
 .banner-box h1 {
