@@ -1,10 +1,11 @@
 * {
     font-family: monospace, sans-serif;
-    color: wheat;
 }
 
-html {
+html,
+body {
     overflow-x: hidden;
+    color: wheat;
 }
 
 .navbar-toggler span {
@@ -252,10 +253,7 @@ body {
         font-size: xx-large !important;
     }
 
-    .box-texto p,
-    .btn-contact {
-        font-size: small !important;
-    }
+   
 }
 
 .skill-section {
@@ -296,7 +294,7 @@ body {
 
 .btn-contact:hover {
     background: linear-gradient(to top, pink, blueviolet, indigo);
-    box-shadow: 2px 2px wheat;
+    box-shadow: 0px  0px  1px 0px wheat;
 }
 
 .soft-skill-section ul {
@@ -457,3 +455,31 @@ body {
 .bi-arrow-up-circle-fill:hover {
     color: rgb(202, 155, 246);
 }
+
+
+.banner-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #4bcd9b, #3f5cb3);
+    height: 8vh;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 15px;
+    transform: rotate(-0.7deg);
+    transform-origin: top left;
+    font-size: 122px !important;
+
+}
+.banner-box h1 {
+    font-weight: 900;
+    letter-spacing: .5rem;
+}
+.colmena {
+    position: absolute;
+    opacity: 0.2;
+    max-height: 15vw;
+}
+
+
