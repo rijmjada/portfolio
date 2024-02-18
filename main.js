@@ -57,6 +57,6 @@ function cambiarOpacidad() {
 }
 
 // Configurar un intervalo para cambiar la opacidad cada 500 milisegundos
-let intervalId = setInterval(cambiarOpacidad, 300);
+let intervalId = setInterval(cambiarOpacidad, 500);
 
 
