@@ -282,7 +282,7 @@ body {
 .btn-contact {
     background: linear-gradient(to bottom, pink, blueviolet, indigo);
     border: none;
-    border-style: none;
+    border-style:ridge;
 }
 
 .btn-contact a {
