@@ -509,7 +509,7 @@ body {
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     opacity: 0.3;
     transition: all 0.4s ease-in-out;
-    filter: blur(2px);
+    filter: blur(1px);
 }
 
 .hex.opacidad-1 {
